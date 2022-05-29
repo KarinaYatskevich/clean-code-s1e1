@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="style.css" type="text/css" media="screen" charset="utf-8">
   </head>
   <body>
+
     <header class="header">
       <div class="header-body">
         <img src="./eisenhower-matrix.jpg" alt=" the eisenhower matrix">
@@ -14,19 +15,25 @@
           </a>
       </div>
     </header>
+
     <main class="main">
       <div class="main-body">
         <section class="main-body__new-task-block new-task" >
-          <label for="new-task__input">Add Item</label>
-          <div class="new-task__wrapper">
-            <input id="new-task__input" class="task" type="text">
-            <button>Add</button>
+          <div class="add-task">
+            <label for="new-task__input">Add Item</label>
+            <div class="new-task__wrapper">
+              <input id="new-task__input" class="task" type="text">
+              <button class="add-task__btn">Add</button>
+            </div>
           </div>
         </section>
+
         <h3>Todo</h3>
+        
         <section class="main-body__incomplete-tasks">
           <ul class="incomplete-tasks" id="incomplete-tasks">
-            <li><input type="checkbox">
+            <li class="task-item">
+              <input type="checkbox">
               <label class="task">Pay Bills</label>
               <input type="text" class="task">
               <button class="edit-task">Edit</button>
@@ -34,7 +41,7 @@
                 <img src="./remove.svg" alt="remove">
               </button>
             </li>
-            <li class="edit-mode">
+            <li class="task-item edit-mode">
               <input type="checkbox">
               <label class="task">Go Shopping</label>
               <input type="text" value="Go Shopping" class="task">
@@ -45,10 +52,12 @@
             </li>
           </ul>
         </section>
+        
         <section class="main-body__complete-tasks"></section>
           <h3>Completed</h3>
           <ul class="completed-tasks" id="completed-tasks">
-            <li><input type="checkbox" checked>
+            <li class="task-item">
+              <input type="checkbox" checked>
               <label class="task">See the Doctor</label>
               <input type="text" class="task">
               <button class="edit-task">Edit</button>
