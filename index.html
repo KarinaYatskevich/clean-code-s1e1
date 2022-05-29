@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="style.css" type="text/css" media="screen" charset="utf-8">
   </head>
   <body>
-    <header>
+    <header class="header">
       <div class="header-body">
         <img src="./eisenhower-matrix.jpg" alt=" the eisenhower matrix">
         <a class="header-body__link" href="https://goal-life.com/page/method/matrix-eisenhower">
@@ -14,12 +14,12 @@
           </a>
       </div>
     </header>
-    <main>
+    <main class="main">
       <div class="main-body">
         <section class="main-body__new-task-block new-task" >
-          <label for="new-task-input">Add Item</label>
-          <div class="new-task-wrapper">
-            <input id="new-task-input" class="task" type="text">
+          <label for="new-task__input">Add Item</label>
+          <div class="new-task__wrapper">
+            <input id="new-task__input" class="task" type="text">
             <button>Add</button>
           </div>
         </section>
@@ -34,7 +34,7 @@
                 <img src="./remove.svg" alt="remove">
               </button>
             </li>
-            <li class="editMode">
+            <li class="edit-mode">
               <input type="checkbox">
               <label class="task">Go Shopping</label>
               <input type="text" value="Go Shopping" class="task">
